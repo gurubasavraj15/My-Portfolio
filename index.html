@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+
+    <title>Website 1</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><span>G</span>urubasavaraj</a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navbar">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>I am <span>G</span>urubasavaraj!</h2>
+            <h5>Student and a small developer</h5>
+            <a class="btn" href="#projects">Projects</a>
+        </div>
+    </section>
+    <section class="profile" id="profile">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Me</h2>
+                <p class="description">
+                    Name: Gurubasavaraj
+                    <br>
+                    Age: 14
+                    <br>
+                    Profession: Student
+                    <br>
+                    Languages: HTML, CSS, JavaScript, Python, C.
+                    <br>
+                    Frameworks/Libraries: Electron.js, PyQt5, Tkinter, Tailwind CSS
+                    <br>
+                    Tools: Npm, Git, Github, Repl.it, Codepen, Visual Studio Code, MongoDB.
+                    <br>
+                    <br>
+                    I'm currently a student studying in 9th standard.
+                    <br> 
+                    Intrested in developing discord bots, websites, Gui.
+                    <br>
+                    Checkout my projects in <a href="#projects">Projects</a> in projects tab.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+
+        <h2 class="prohead"><span>P</span>rojects</h2>
+
+        <section class="JavaScript" id="JavaScript">
+            <h3><span>Java</span> Script</h3>
+            <div class="projs">
+                <a href="https://github.com/a" target="_blank">
+                    <div class="pr">
+                        <div class="primg">
+                            <img src="assets/menu.jpg" alt="project1">
+                        </div>
+                        <div class="prtitle">
+                            <h4>JavaScript Calculator</h4>
+                        </div>
+                    </div>
+                </a>
+            <a href="https://github.com/b" target="_blank">
+            <div class="pr">
+                <div class="primg">
+                    <img src="assets/menu1.jpg" alt="project1">
+                </div>
+                <div class="prtitle">
+                    <h4>JavaScript Digital Clock</h4>
+                </div>
+            </div>
+            </a>
+            <a href="https://github.com/c" target="_blank">
+            <div class="pr">
+                <div class="primg">
+                    <img src="assets/menu2.jpg" alt="project1">
+                </div>
+                <div class="prtitle">
+                    <h4>Galactic Discord Bot</h4>
+                </div>
+            </div>
+            </a>
+            <a href="https://github.com/d" target="_blank">
+            <div class="pr">
+                <div class="primg">
+                    <img src="assets/trex1.png" alt="project1">
+                </div>
+                <div class="prtitle">
+                    <h4>Trex Game</h4>
+                </div>
+            </div>
+            </a>
+            </div>
+        </section>
+    </section>
+
+    <section class="contact" id="contact">
+        <footer>
+            <a href="#" class="logo"><span>C</span>ontact</a>
+            <!-- <ul class="cobar">
+                <li><a href="https://github.com/gurubasavraj15" target="_blank">Github</a></li>
+                <li><a href="https://discord.com/users/728084078892548107" target="_blank">Discord</a></li>
+            </ul> -->
+        </footer>
+    </section>
+
+    <ul class="cobar">
+        <li><a href="https://github.com/gurubasavraj15" target="_blank">Github</a></li>
+        <li><a href="https://discord.com/users/728084078892548107" target="_blank">Discord</a></li>
+    </ul>
+
+    <div class="copyrightText">
+        <p>Copyright 2020 <span>Gurubasavaraj</span>, All Rights reserved</p>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header')
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.menuToggle');
+            var navbar = document.querySelector('.navbar');
+            menuToggle.classList.toggle('active')
+            navbar.classList.toggle('active')  
+        }
+    </script>
+</body>
+
+</html>
